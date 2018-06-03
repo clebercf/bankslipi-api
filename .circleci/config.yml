@@ -54,5 +54,3 @@ workflows:
           filters:
             tags:
               only: /stage-.*/
-            branches:
-              ignore: /.*/
