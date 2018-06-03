@@ -33,3 +33,11 @@ O objetivo do projeto é disponibilizar uma API REST para geração de boletos q
 - Após o comando, o relatório estará disponível no diretório abaixo. Basta abri-lo no navegador de internet.
  
  		{pasta do projeto}/target/site/jacoco-ut/index.html
+ 			
+## Coleção teste para o postman
+
+- Segue abaixo o link com a coleção do postman para teste da API.
+
+		https://www.getpostman.com/collections/c1cc46536dc6f825c201
+
+- Basta importar utilizando link e a nova coleção será adicionada as suas coleções do postman.
