@@ -52,5 +52,5 @@ workflows:
           requires:
             - build
           filters:
-            tags:
-              only: /stage-.*/
+            branches:
+              only: stage
