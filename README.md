@@ -22,4 +22,4 @@ O comando executará os testes unitários e integrado do projeto.
 
 - A API utiliza o padrão de documentação swagger, acessível em:
 
-	http://localhost:8080/swagger-ui.html
+		http://localhost:8080/swagger-ui.html
