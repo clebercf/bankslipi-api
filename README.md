@@ -18,7 +18,7 @@ O comando executará os testes unitários e integrado do projeto.
  
 		java -jar target/bankslip-api-0.0.1-SNAPSHOT.jar
  
- ## Cobertura dos testes
+## Cobertura dos testes
  
  - Para orientar o desenvolvedor a evoluir e manter o projeto cada vez mais robusto, nativamente existe a possibilidade de gerar um relatório com a respectiva cobertura.
 Para gerar o relatório, basta executar o seguinte comando:
