@@ -29,7 +29,7 @@ public class SwaggerConfig {
         ApiInfo apiInfo = new ApiInfo(
                 "Bankslip API",
                 "Spring Boot REST API for Bankslip",
-                "1.2",
+                "1.2 - Stage",
                 "API to add, list, cancel and pay bank slips.",
                 new Contact("Cleber Fonseca", "", "clebercf@gmail.com"),
                "Private Use License",
