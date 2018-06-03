@@ -9,15 +9,14 @@ O projeto consiste na exposição de uma API Rest para geração de boletos.
 
 ## Instalação 
 
-- A partir da pasta principal do projeto, onde fica disposto o arquivo pom.xml.
-
-- Gerar o pacote (jar) do projeto através do Maven. O comando executará os testes unitários e intergrados do projeto.
+- A partir da pasta principal do projeto, gerar o pacote (jar) do projeto através do Maven.
+O comando executará os testes unitários e integrado do projeto.
  
 		mvn clean package
  
 - Após a geração do pacote, deve ser inicializado a aplicação através do comando que segue abaixo:
  
-		java -jar bankslip-api-0.0.1-SNAPSHOT.jar
+		java -jar target/bankslip-api-0.0.1-SNAPSHOT.jar
  
 ## Documentação da API
 
