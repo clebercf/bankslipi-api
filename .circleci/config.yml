@@ -30,8 +30,27 @@ jobs: # a collection of steps
           path: target/demo-java-spring-0.0.1-SNAPSHOT.jar
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples    
 
-deployment:
-  stage:
-    tag: /stage-.*/
-    heroku:
-      appname: bankslip-api
+  deploy:
+    machine:
+        enabled: true
+    working_directory: ~/circleci-demo-workflows
+    environment:
+      HEROKU_APP: "bankslip-api"
+    steps:
+      - checkout
+      - run:
+          name: Deploy tag to Heroku
+          command: |
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP.git master
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /stage-.*/
