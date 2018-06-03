@@ -34,18 +34,20 @@ O objetivo do projeto é disponibilizar uma API REST para geração de boletos q
  
  		{pasta do projeto}/target/site/jacoco-ut/index.html
  			
-## Coleção teste para o postman
+## Integração contínua e deploy no heroku
+
+- O circleci foi utilizado para o build e deploy da api no heroku. Para habilitar a integração com circleci, foi adicionado o arquivo config.yml a pasta .circleci que esta na raiz do projeto.
+O build ocorre para todo push ao repo e o deploy somente após o build com sucesso, condicionado também a pushs no branch de stage.
+Segue a url do projeto publicada no heroku.
+
+		https://bankslip-api.herokuapp.com/swagger-ui.html
+		
+- Algumas configurações foram adicionadas no site do circleci para o deploy.
+		
+## Coleção postman da API
 
 - Segue abaixo o link com a coleção do postman para teste da API.
 
 		https://www.getpostman.com/collections/c1cc46536dc6f825c201
 
 - Basta importar utilizando link e a nova coleção será adicionada as suas coleções do postman.
-
-## Integração contínua e deploy
-
-- O circleci foi utilizado para o build e deploy. A forma de integração é bem simples, basta adicionar o arquivo config.yml a pasta .circleci que esta na raiz do projeto.
-A lógica entre o build e o deploy é configurado neste arquivo. Neste caso, faz-se o build pra qualquer push ao repositório e o deploy para o heroku somente quando tem-se pushs no branch de stage.
-Segue a url do projeto publicada no heroku.
-
-		https://bankslip-api.herokuapp.com/swagger-ui.html
