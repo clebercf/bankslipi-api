@@ -97,7 +97,7 @@ public class BankSlipRepositoryTest {
 		BankSlip bankSlipVanessa = new BankSlip("Vanessa", "PENDING", BigDecimal.ONE, new Date());
 	    entityManager.persist(bankSlipVanessa);
 	    entityManager.flush();
-	 
+	    
 	    // when
 	    bankSlipVanessa.setStatus("CANCELED");
 		bankSlipRepository.save(bankSlipVanessa);

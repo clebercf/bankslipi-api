@@ -1,29 +1,26 @@
-# README #
+# API de boletos #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+O projeto consiste na exposição de uma API Rest para geração de boletos. 
 
-### What is this repository for? ###
+## Arquitetura 
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+- Java versão 8
+- Spring Boot
 
-### How do I get set up? ###
+## Instalação 
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+- A partir da pasta principal do projeto, onde fica disposto o arquivo pom.xml.
 
-### Contribution guidelines ###
+- Gerar o pacote (jar) do projeto através do Maven. O comando executará os testes unitários e intergrados do projeto.
+ 
+		mvn clean package
+ 
+- Após a geração do pacote, deve ser inicializado a aplicação através do comando que segue abaixo:
+ 
+		java -jar bankslip-api-0.0.1-SNAPSHOT.jar
+ 
+## Documentação da API
 
-* Writing tests
-* Code review
-* Other guidelines
+- A API utiliza o padrão de documentação swagger, acessível em:
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+	http://localhost:8080/swagger-ui.html
