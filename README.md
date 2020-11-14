@@ -4,7 +4,7 @@ O objetivo do projeto é disponibilizar uma API REST para geração de boletos q
 
 ## Arquitetura 
 
-- Java versão 8
+- Java versão 8x
 - Stack: Spring Boot
 - Build: Maven
 
